@@ -1,9 +1,10 @@
 @import "./../../../styles.scss";
 
-.header {
+.headercontainer {
   padding: 10px;
   background-color: #141d2f;
   padding: 37px 100px;
+  @include poppins;
 
   li {
     list-style: none;
@@ -15,7 +16,7 @@ header {
   @include fsc;
   max-width: 1920px;
 
-  img {
+  .logo {
     width: 150px;
   }
 
@@ -41,30 +42,64 @@ header {
 .navLink {
   color: white;
   text-decoration: none;
-  @include poppins;
   font-size: 23px;
   font-weight: 400;
+  position: relative;
+
   &:hover {
     color: #70e61c;
   }
-  &.active {
-    text-underline-position: linear;
-    text-decoration: underline;
-    color: #9747ff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9747ff;
+    transition: width 0.5s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 50%;
+  }
+}
+
+@keyframes underlineEffect {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 50%; // Linie erreicht 50% der Breite
+  }
+  100% {
+    width: 50%; // Bleibt bei 50%
   }
 }
 
 .navLang {
-  @include poppins;
   text-decoration: none;
   color: white;
   padding: 5px 8px;
+  @include fcc;
   font-size: 18px;
   font-weight: 700;
   border: 1px solid #70e61c;
   border-radius: 10px;
+  line-height: 120%;
 
   &:hover {
     background-color: #70e61c;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+@keyframes slide {
+  0% {
+    text-underline-offset: 0px;
+  }
+  100% {
+    text-underline-offset: 3px;
   }
 }
