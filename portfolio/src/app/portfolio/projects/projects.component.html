@@ -1,0 +1,15 @@
+<div
+  *ngFor="let project of projects; let i = index"
+  [ngClass]="i % 2 === 0 ? 'project-right' : 'project-left'"
+>
+  <img [src]="project.image" alt="{{ project.title }}" />
+  <div class="project-content">
+    <h1>{{ project.title }}</h1>
+    <h2>{{ project.language }}</h2>
+    <p>{{ project.description }}</p>
+    <div class="btn">
+      <a href="{{ project.url }}" class="demo">Live test</a>
+      <a href="{{ project.github }}" class="github">GitHub</a>
+    </div>
+  </div>
+</div>

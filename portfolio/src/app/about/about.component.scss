@@ -1,6 +1,80 @@
+@import "./../../styles.scss";
+
 .aboutmain {
+  @include poppins;
   position: relative;
   z-index: 1;
-  height: 532px * 1.5;
-  background-color: #141d2f;
+  height: 100vh;
+  top: 133px;
+  left: 100px;
+  color: white;
+  width: 1340px;
+}
+
+.background {
+  img {
+    position: absolute;
+    z-index: 1;
+    bottom: 670px;
+    left: 1053px;
+    backdrop-filter: blur(93px);
+    -webkit-backdrop-filter: blur(93px);
+    height: 608px;
+    width: 572px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 532px;
+
+  .aboutleft {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      height: 453px;
+      width: 453px;
+      border-radius: 100%;
+      border: solid 4px #70e61c;
+      position: relative;
+      z-index: 1;
+    }
+    hr {
+      width: 267px;
+      border: solid 2px #70e61c;
+      height: 0px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.abouttext {
+  display: flex;
+  flex-direction: column;
+  width: 471px;
+  gap: 32px;
+  font-size: 16px;
+  line-height: 120%;
+  .text {
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    gap: 16px;
+  }
 }

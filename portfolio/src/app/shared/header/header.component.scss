@@ -1,10 +1,11 @@
 @import "./../../../styles.scss";
 
 .headercontainer {
-  padding: 10px;
   background-color: #141d2f;
   padding: 37px 100px;
   @include poppins;
+  position: sticky;
+  top: 0;
 
   li {
     list-style: none;
@@ -14,7 +15,6 @@
 
 header {
   @include fsc;
-  max-width: 1920px;
 
   .logo {
     width: 150px;
