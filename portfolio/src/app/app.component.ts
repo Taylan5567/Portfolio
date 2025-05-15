@@ -9,6 +9,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { OnInit } from '@angular/core';
+import { ReviewComponent } from './review/review.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { OnInit } from '@angular/core';
     PortfolioComponent,
     ContactComponent,
     AboutComponent,
+    ReviewComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

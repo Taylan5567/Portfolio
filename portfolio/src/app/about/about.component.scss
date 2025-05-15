@@ -20,7 +20,10 @@
     backdrop-filter: blur(93px);
     -webkit-backdrop-filter: blur(93px);
     height: 608px;
-    width: 572px;
+    width: 288px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: left;
   }
 }
 

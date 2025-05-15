@@ -1,0 +1,105 @@
+@import "./../../styles.scss";
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  top: 133px;
+  position: relative;
+  left: 100px;
+  width: 1340px;
+}
+
+.testmonialcontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.testimonial {
+  gap: 44px;
+  border-radius: 32px;
+  padding: 48px 96px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 4px solid rgba(112, 230, 28, 1);
+  margin-right: 48px;
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 659.5px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+
+  hr {
+    background-color: rgba(151, 71, 255, 1);
+    max-width: 100%;
+    flex-grow: 1;
+    height: 1px;
+    border: 1px solid rgba(151, 71, 255, 1);
+    border-radius: 50px;
+  }
+}
+
+.testpic {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  hr {
+    background-color: rgba(151, 71, 255, 1);
+    width: 104px;
+    height: 1px;
+    border: 1px solid rgba(151, 71, 255, 1);
+    border-radius: 50px;
+  }
+  button {
+    background-color: none;
+  }
+}
+
+.btns {
+  @include fcc;
+  gap: 25px;
+  margin-top: 20px;
+  height: 40px;
+  .circleone.active {
+    fill: rgba(112, 230, 28, 1);
+    height: 8px;
+    width: 8px;
+  }
+  .circle {
+    height: 8px;
+    width: 8px;
+    fill: rgba(151, 71, 255, 1);
+  }
+  .prev,
+  .next {
+    fill: rgba(112, 230, 28, 1);
+    height: 24px;
+    width: 24px;
+    max-width: 40px;
+    max-height: 40px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    cursor: pointer;
+    border: 1px solid rgba(112, 230, 28, 1);
+    border-radius: 50px;
+  }
+}
