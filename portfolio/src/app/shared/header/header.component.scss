@@ -1,11 +1,24 @@
 @import "./../../../styles.scss";
 
-.headercontainer {
-  background-color: #141d2f;
-  padding: 37px 100px;
-  @include poppins;
+.container {
+  background-color: rgba(20, 29, 47, 1);
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  display: flex;
   position: sticky;
-  top: 0;
+}
+
+.headercontainer {
+  margin: 0 auto;
+  z-index: 1000;
+  background-color: rgba(20, 29, 47, 1);
+  padding: 37px 100px;
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
 
   li {
     list-style: none;
@@ -15,7 +28,6 @@
 
 header {
   @include fsc;
-
   .logo {
     width: 150px;
   }
@@ -71,10 +83,10 @@ header {
     width: 0;
   }
   50% {
-    width: 50%; // Linie erreicht 50% der Breite
+    width: 50%;
   }
   100% {
-    width: 50%; // Bleibt bei 50%
+    width: 50%;
   }
 }
 
@@ -88,6 +100,11 @@ header {
   border: 1px solid #70e61c;
   border-radius: 10px;
   line-height: 120%;
+  cursor: pointer;
+
+  &.active {
+    background-color: #70e61c !important;
+  }
 
   &:hover {
     background-color: #70e61c;

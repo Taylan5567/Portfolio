@@ -1,0 +1,50 @@
+{
+  "NAV": {
+    "ABOUT": "About",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
+  },
+  "FOOTER": {
+    "IMPRINT": "Imprint"
+  },
+  "SKILLS": {
+    "TITLE": "Continually learning",
+    "SUBTITLE": "My skills",
+    "DESCRIPTION": "I use HTML, CSS, JavaScript, TypeScript, Angular, Firebase, and Git to build modern web apps.",
+    "LOOKING_FOR": "Looking for",
+    "SKILL": "another skill?",
+    "PASSION": "I’m passionate about learning new technologies and frameworks. I love staying up-to-date and applying fresh ideas to my projects.",
+    "CONTACT": "Get in touch"
+  },
+  "PORTFOLIO": {
+    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "QUESTION": "Got a problem to solve?",
+    "TEXT": "I'm open to new opportunities and excited to connect—especially for roles in software development, web design, or tech support. With a passion for modern tech and a detail-oriented mindset, I aim to add real value to every project. Let’s create something that works—and inspires.",
+    "CTA": "Need a Frontend developer?",
+    "BUTTON": "Contact me!"
+  },
+  "CONTACTFORM": {
+    "NAME_REQUIRED": "Your name is required.",
+    "EMAIL_INVALID": "Please enter a valid email.",
+    "PHONE_INVALID": "Please enter a valid German phone number.",
+    "MESSAGE_TOO_SHORT": "Message must be at least 20 characters.",
+    "READ_PRIVACY": "I've read",
+    "READ_PRIVACY_NEXT": "and agree to the processing of my data as outlined.",
+    "ACCEPT_PRIVACY": "Please accept the privacy policy.",
+    "READ_PRIVACY_TEXT": "privacy policy"
+  },
+  "ABOUT": {
+    "TITLE": "About me",
+    "PARAGRAPH_1": "Since the age of 16, I have been fascinated by programming. Every project brings new experiences and insights. I love improving my skills and discovering new technologies.",
+    "PARAGRAPH_2": "I live in Munich and am open to all possibilities. I enjoy working from anywhere, whether remotely or in the office, where I also feel comfortable.",
+    "PARAGRAPH_3": "I am always eager to learn and grow, mastering new technologies and refining my skills to stay ahead in the ever-evolving world of programming.",
+    "PARAGRAPH_4": "I approach problems with analytical thinking and creativity, always seeking the most efficient and elegant solution. Every challenge is an opportunity to learn, refine my skills, and improve my persistence. I value collaboration, knowing that working together leads to the best results."
+  },
+  "HERO": {
+    "SCROLL": "Scroll down"
+  }
+}

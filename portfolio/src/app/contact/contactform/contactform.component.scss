@@ -1,0 +1,180 @@
+@use "@angular/material" as mat;
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+input {
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: flex;
+  border: 1px solid rgba(151, 71, 255, 1);
+  background-color: rgba(20, 29, 47, 1);
+}
+
+input::placeholder,
+textarea::placeholder,
+input,
+textarea {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 1;
+  width: 617px;
+}
+
+textarea {
+  height: 202px;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  display: flex;
+  border: 1px solid rgba(151, 71, 255, 1);
+  background-color: rgba(20, 29, 47, 1);
+  max-width: 617px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: rgba(112, 230, 28, 1);
+  outline-width: 1px;
+}
+
+.error {
+  color: rgba(230, 28, 64, 1);
+  font-weight: 400;
+  font-size: 14px;
+  animation: ease-in-out 300ms;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 1px solid rgba(230, 28, 64, 1);
+  background-image: url(./../../../assets/img/icons/bad.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+input.ng-valid.ng-touched {
+  border: 1px solid rgba(112, 230, 28, 1);
+  background-image: url(./../../../assets/img/icons/great.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+textarea.ng-invalid.ng-touched {
+  border: 1px solid rgba(230, 28, 64, 1);
+  background-image: url(./../../../assets/img/icons/bad.png);
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px;
+}
+
+textarea.ng-valid.ng-touched {
+  border: 1px solid rgba(112, 230, 28, 1);
+  background-image: url(./../../../assets/img/icons/great.png);
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  input {
+    width: 253px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: rgba(112, 230, 28, 1);
+    color: white;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 23px;
+  }
+  input:disabled {
+    background-color: rgba(182, 182, 182, 1);
+  }
+}
+
+.ppolice {
+  display: flex;
+  align-items: center;
+  margin-top: -16px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #70e61c;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  margin-right: 10px;
+
+  &.ng-invalid.ng-touched {
+    border: 1px solid rgba(230, 28, 64, 1) !important;
+    background-image: none !important;
+  }
+
+  &.ng-valid.ng-touched {
+    border: 1px solid rgba(112, 230, 28, 1) !important;
+    background-image: none !important;
+  }
+
+  &:hover {
+    background-color: rgba(24, 55, 113, 1);
+  }
+
+  &:checked {
+    background-color: transparent;
+  }
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 5px;
+    height: 10px;
+    border: solid #70e61c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(112, 230, 28, 0.4);
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.policy {
+  color: rgba(151, 71, 255, 1);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.submitbtn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}

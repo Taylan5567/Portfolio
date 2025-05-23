@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { HeroComponent } from './hero/hero.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { HeroComponent } from './hero/hero.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { AboutComponent } from './about/about.component';
-import { OnInit } from '@angular/core';
 import { ReviewComponent } from './review/review.component';
 
 @Component({
@@ -16,31 +16,34 @@ import { ReviewComponent } from './review/review.component';
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
+    TranslateModule,
+    HeroComponent,
     HeaderComponent,
     FooterComponent,
-    HeroComponent,
+    AboutComponent,
+    ContactComponent,
     SkillsComponent,
     PortfolioComponent,
-    ContactComponent,
-    AboutComponent,
     ReviewComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'portfolio';
-
-  ngOnInit(): void {
-    this.onHtmlLanguage('en');
-    if (navigator.language === 'de') {
-      this.onHtmlLanguage('de');
-    }
+  constructor(private translate: TranslateService) {
+    this.translate.addLangs(['de', 'en']);
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
   }
 
-  //wichtig für später
-  onHtmlLanguage(lang: string) {
-    const htmlElement = document.documentElement;
-    htmlElement.setAttribute('lang', lang);
+  switchLanguage(lang: string) {
+    this.translate.use(lang);
+    this.translate.currentLang = lang;
+  }
+
+  getCurrentLanguage() {
+    return this.translate.currentLang;
   }
 }

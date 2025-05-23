@@ -1,1 +1,101 @@
-<p>contactform works!</p>
+<div class="container">
+  <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <div class="input-group">
+      <input
+        [(ngModel)]="contactData.name"
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name"
+        #name="ngModel"
+        required
+        pattern="^[A-Za-zÄÖÜäöüß\s\-']{2,}$"
+      />
+      @if (name.invalid && name.touched) {
+      <span class="error">{{ "CONTACTFORM.NAME_REQUIRED" | translate }}</span>
+      }
+    </div>
+
+    <div class="input-group">
+      <input
+        [(ngModel)]="contactData.email"
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Your email"
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        required
+        #email="ngModel"
+      />
+      @if (email.invalid && email.touched) {
+      <span class="error">{{ "CONTACTFORM.EMAIL_INVALID" | translate }}</span>
+      }
+    </div>
+
+    <div class="input-group">
+      <input
+        [(ngModel)]="contactData.phone"
+        id="phone"
+        name="phone"
+        type="tel"
+        pattern="^(\+49|0)[\s()\-]*[1-9][0-9\s()\-]{7,14}$"
+        placeholder="Your phone number... for a callback"
+        #phone="ngModel"
+      />
+      @if (phone.invalid && phone.touched) {
+      <span class="error">{{ "CONTACTFORM.PHONE_INVALID" | translate }}</span>
+      }
+    </div>
+
+    <div class="input-group">
+      <textarea
+        [(ngModel)]="contactData.message"
+        id="message"
+        name="message"
+        placeholder="Write something..."
+        minlength="20"
+        required
+        #message="ngModel"
+      ></textarea>
+      @if (message.invalid && message.touched) {
+      <span class="error">{{
+        "CONTACTFORM.MESSAGE_TOO_SHORT" | translate
+      }}</span>
+      }
+    </div>
+
+    <div class="submitbtn">
+      <div class="ppolice">
+        <input
+          type="checkbox"
+          class="checkbox"
+          type="checkbox"
+          #checkbox="ngModel"
+          [(ngModel)]="contactData.checkbox"
+          id="checkbox"
+          name="checkbox"
+          required
+        />
+        <p class="text">
+          {{ "CONTACTFORM.READ_PRIVACY" | translate }}
+          <a class="policy" href="https://www.google.de">{{
+            "CONTACTFORM.READ_PRIVACY_TEXT" | translate
+          }}</a>
+          {{ "CONTACTFORM.READ_PRIVACY_NEXT" | translate }}
+        </p>
+      </div>
+      @if (checkbox.touched && !contactData.checkbox) {
+      <span class="error">{{ "CONTACTFORM.ACCEPT_PRIVACY" | translate }}</span>
+      }
+
+      <div class="btn">
+        <input
+          id="submit"
+          type="submit"
+          value="Send message :)"
+          [disabled]="contactForm.invalid || !contactData.checkbox"
+        />
+      </div>
+    </div>
+  </form>
+</div>

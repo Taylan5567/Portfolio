@@ -1,19 +1,19 @@
 <section>
   <div class="linecontact">
     <div class="lineone"></div>
-    <h1>Contact</h1>
+    <h1>{{ "CONTACT.TITLE" | translate }}</h1>
   </div>
   <div class="contact">
     <div class="solve">
-      <h2>Got a problem to solve?</h2>
+      <h2>{{ "CONTACT.QUESTION" | translate }}</h2>
       <p>
-        I'm open to new opportunities and excited to connect—especially for
-        roles in software development, web design, or tech support. With a
-        passion for modern tech and a detail-oriented mindset, I aim to add real
-        value to every project. Let’s create something that works—and inspires.
+        {{ "CONTACT.TEXT" | translate }}
       </p>
-      <p>Need a Frontend developer? <span>Contact me!</span></p>
+      <p>
+        {{ "CONTACT.CTA" | translate }}
+        <span>{{ "CONTACT.BUTTON" | translate }}</span>
+      </p>
     </div>
-    <div class="contactform"></div>
+    <app-contactform></app-contactform>
   </div>
 </section>

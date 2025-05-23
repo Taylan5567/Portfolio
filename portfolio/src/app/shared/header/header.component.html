@@ -1,21 +1,53 @@
-<div class="headercontainer">
-  <header>
-    <img
-      class="logo"
-      src="./../../../assets/img/logo/logo_taylan_weiss.png"
-      href="/"
-    />
-    <nav>
-      <ul class="nav">
-        <li><a class="navLink" routerLink="/about">About</a></li>
-        <li><a class="navLink" routerLink="/portfolio">Skills</a></li>
-        <li><a class="navLink" routerLink="/contact">Portfolio</a></li>
-        <li><a class="navLink" routerLink="/contact">Contact</a></li>
-      </ul>
-      <ul class="lang">
-        <li><a class="navLang" routerLink="/">DE</a></li>
-        <li><a class="navLang" routerLink="/">EN</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="container">
+  <div class="headercontainer">
+    <header>
+      <img
+        class="logo"
+        src="./../../../assets/img/logo/logo_taylan_weiss.png"
+        href="/"
+      />
+      <nav>
+        <ul class="nav">
+          <li>
+            <a class="navLink" routerLink="/about">{{
+              "NAV.ABOUT" | translate
+            }}</a>
+          </li>
+          <li>
+            <a class="navLink" routerLink="/portfolio">{{
+              "NAV.SKILLS" | translate
+            }}</a>
+          </li>
+          <li>
+            <a class="navLink" routerLink="/contact">{{
+              "NAV.PORTFOLIO" | translate
+            }}</a>
+          </li>
+          <li>
+            <a class="navLink" routerLink="/contact">{{
+              "NAV.CONTACT" | translate
+            }}</a>
+          </li>
+        </ul>
+        <ul class="lang">
+          <li>
+            <a
+              class="navLang"
+              [class.active]="checklanguage('de')"
+              (click)="switchLang('de')"
+              >DE</a
+            >
+          </li>
+          <li>
+            <a
+              class="navLang"
+              [class.active]="checklanguage('en')"
+              (click)="switchLang('en')"
+              >EN</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 </div>

@@ -1,0 +1,50 @@
+{
+  "NAV": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Kontakt"
+  },
+  "FOOTER": {
+    "IMPRINT": "Impressum"
+  },
+  "SKILLS": {
+    "TITLE": "Ständiges Lernen",
+    "SUBTITLE": "Skills",
+    "DESCRIPTION": "Ich nutze HTML, CSS, JavaScript, TypeScript, Angular, Firebase und Git, um moderne Webanwendungen zu entwickeln.",
+    "LOOKING_FOR": "Du suchst",
+    "SKILL": "einen anderen Skill?",
+    "PASSION": "Ich liebe es, neue Technologien und Frameworks zu lernen. Ich bleibe gerne auf dem Laufenden und bringe frische Ideen in meine Projekte.",
+    "CONTACT": "Kontakt aufnehmen"
+  },
+  "PORTFOLIO": {
+    "DESCRIPTION": "Hier findest du eine Auswahl meiner Arbeiten – klicke dich durch, um meine Fähigkeiten live zu sehen."
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "QUESTION": "Ein Problem zu lösen?",
+    "TEXT": "Ich bin offen für neue Möglichkeiten und freue mich über Kontakt – besonders für Projekte in der Softwareentwicklung, im Webdesign oder technischen Support. Mit Leidenschaft für moderne Technik und einem Blick fürs Detail bringe ich echten Mehrwert. Lass uns gemeinsam etwas schaffen, das wirkt – und begeistert.",
+    "CTA": "Frontend-Entwickler gesucht?",
+    "BUTTON": "Kontaktiere mich!"
+  },
+  "CONTACTFORM": {
+    "NAME_REQUIRED": "Dein Name ist erforderlich.",
+    "EMAIL_INVALID": "Bitte gib eine gültige E-Mail-Adresse ein.",
+    "PHONE_INVALID": "Bitte gib eine gültige deutsche Telefonnummer ein.",
+    "MESSAGE_TOO_SHORT": "Die Nachricht muss mindestens 20 Zeichen haben.",
+    "READ_PRIVACY": "Ich habe die",
+    "READ_PRIVACY_NEXT": "gelesen und stimme der Datenverarbeitung zu.",
+    "ACCEPT_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
+    "READ_PRIVACY_TEXT": "Datenschutzerklärung"
+  },
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "PARAGRAPH_1": "Seit ich 16 bin, begeistert mich Programmieren. Jedes Projekt bringt neue Erfahrungen. Ich liebe es, mein Können zu verbessern und Neues zu entdecken.",
+    "PARAGRAPH_2": "Ich lebe in München und bin offen für vieles. Ich arbeite gerne flexibel – remote oder im Büro, beides liegt mir.",
+    "PARAGRAPH_3": "Ich lerne und wachse stetig, eigne mir neue Technologien an und verfeinere meine Skills, um in der schnelllebigen Tech-Welt vorne dabei zu sein.",
+    "PARAGRAPH_4": "Ich kombiniere analytisches Denken mit Kreativität, suche die beste Lösung und sehe in jeder Herausforderung die Chance, besser zu werden. Zusammenarbeit ist mir wichtig – sie führt zu den besten Ergebnissen."
+  },
+  "HERO": {
+    "SCROLL": "Runter scrollen"
+  }
+}
