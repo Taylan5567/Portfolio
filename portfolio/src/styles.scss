@@ -20,9 +20,10 @@
 * {
   margin: 0;
   font-family: "Poppins";
-
+  scrollbar-width: none;
   body {
     background-color: #141d2f;
     margin: 0 auto;
+    overflow-x: hidden;
   }
 }

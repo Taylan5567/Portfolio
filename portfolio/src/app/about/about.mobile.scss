@@ -1,0 +1,65 @@
+@import "./../../styles.scss";
+
+@media screen and (max-width: 1440px) {
+  .greenline {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .aboutleft {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutright {
+    img {
+      height: 373px !important;
+      width: 373px !important;
+    }
+  }
+  .aboutmain {
+    padding: 0 !important;
+    gap: 102px;
+    top: 200px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutright {
+    img {
+      height: 300px !important;
+      width: 300px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutright {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aboutmain {
+    @include fcc;
+    height: 50vh !important;
+    top: 200px;
+  }
+  .aboutleft {
+    justify-items: flex-start !important;
+    align-items: flex-start !important;
+    h1 {
+      font-size: 45px !important;
+      text-align: left;
+    }
+    p {
+      font-size: 16px !important;
+    }
+  }
+  .shadow {
+    width: 281px !important;
+    height: 600px !important;
+    top: 954px !important;
+  }
+}

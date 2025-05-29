@@ -9,17 +9,21 @@ section {
   top: 133px;
   gap: 30px;
   color: white;
+  margin: 0 auto;
 }
 
 .linecontact {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 32px;
   .lineone {
-    width: 535px;
+    width: 105vw;
+    height: 0px;
+    background-color: rgb(151, 71, 255);
+    border: 2px solid rgb(151, 71, 255);
     border-radius: 50px;
-    border: 2px solid rgba(151, 71, 255, 1);
+    margin-left: -100vw;
   }
   h1 {
     color: white;
@@ -43,5 +47,34 @@ section {
   }
   span {
     font-weight: 700;
+  }
+}
+
+.contactshadow {
+  position: absolute;
+  top: 4579px;
+  height: 920px;
+  overflow: hidden;
+  object-position: right;
+  z-index: -2;
+  left: 0;
+}
+
+.arrowup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.arrow {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 5px;
+
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    border: 2px solid rgba(112, 230, 28, 1);
   }
 }

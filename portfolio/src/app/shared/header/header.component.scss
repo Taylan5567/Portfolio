@@ -9,6 +9,7 @@
   left: 0;
   display: flex;
   position: sticky;
+  top: 0;
 }
 
 .headercontainer {
@@ -57,6 +58,7 @@ header {
   font-size: 23px;
   font-weight: 400;
   position: relative;
+  cursor: pointer;
 
   &:hover {
     color: #70e61c;

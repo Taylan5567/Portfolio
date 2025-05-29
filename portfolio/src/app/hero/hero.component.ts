@@ -17,7 +17,12 @@ export class HeroComponent implements OnInit {
     private translate: TranslateService
   ) {}
 
-  ngOnInit(): void {
-    console.log('hello');
+  ngOnInit(): void {}
+
+  scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 }

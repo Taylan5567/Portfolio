@@ -9,22 +9,22 @@
       <nav>
         <ul class="nav">
           <li>
-            <a class="navLink" routerLink="/about">{{
+            <a class="navLink" (click)="scrollToSection('about')">{{
               "NAV.ABOUT" | translate
             }}</a>
           </li>
           <li>
-            <a class="navLink" routerLink="/portfolio">{{
+            <a class="navLink" (click)="scrollToSection('skills')">{{
               "NAV.SKILLS" | translate
             }}</a>
           </li>
           <li>
-            <a class="navLink" routerLink="/contact">{{
+            <a class="navLink" (click)="scrollToSection('portfolio')">{{
               "NAV.PORTFOLIO" | translate
             }}</a>
           </li>
           <li>
-            <a class="navLink" routerLink="/contact">{{
+            <a class="navLink" (click)="scrollToSection('contact')">{{
               "NAV.CONTACT" | translate
             }}</a>
           </li>

@@ -1,4 +1,4 @@
-<section>
+<section id="contact">
   <div class="linecontact">
     <div class="lineone"></div>
     <h1>{{ "CONTACT.TITLE" | translate }}</h1>
@@ -16,4 +16,17 @@
     </div>
     <app-contactform></app-contactform>
   </div>
+  <div class="arrowup">
+    <img
+      src="./../../assets/img/images/shadows/arrow-down-line.svg"
+      alt=""
+      class="arrow"
+      (click)="scrollToSection('header')"
+    />
+  </div>
 </section>
+<img
+  src="./../../assets/img/images/shadows/contactshadow.svg"
+  alt=""
+  class="contactshadow"
+/>

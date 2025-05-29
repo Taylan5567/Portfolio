@@ -1,4 +1,5 @@
 @import "./../../styles.scss";
+@import "./skills.mobile.scss";
 
 section {
   position: relative;
@@ -11,6 +12,7 @@ section {
   max-width: 1340px !important;
   width: 100%;
   height: 100vh;
+  margin: 0 auto;
 }
 
 .icons {
@@ -33,6 +35,12 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    .iconmove {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-10px);
+      }
+    }
 
     .purple-text {
       color: rgba(151, 71, 255, 1);
@@ -46,23 +54,43 @@ section {
   text-align: right;
 
   .myskills-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @include fcc;
     gap: 32px;
 
     .title {
       font-size: 90px;
-      font-weight: bold;
+      font-weight: 700;
       margin: 0;
+      white-space: nowrap;
     }
 
     .line {
-      right: 0;
-      width: 68px;
-      height: 4px;
-      background-color: rgba(151, 71, 255, 1);
-      border-radius: 2px;
+      width: 105vw;
+      height: 0px;
+      background-color: rgb(151, 71, 255);
+      border: 2px solid rgb(151, 71, 255);
+      border-radius: 50px;
+      margin-right: -100vw;
+    }
+  }
+
+  .mobile-header {
+    @include fcc;
+    gap: 32px;
+    .title {
+      font-size: 90px;
+      font-weight: 700;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .line {
+      width: 105vw;
+      height: 0px;
+      background-color: rgb(151, 71, 255);
+      border: 2px solid rgb(151, 71, 255);
+      border-radius: 50px;
+      margin-right: -100vw;
     }
   }
 
@@ -98,9 +126,76 @@ section {
     margin-right: 100px;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: white;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
 
     &:hover {
-      background-color: #35dd35;
+      transform: scale(1.1);
+      background-color: rgba(151, 71, 255, 1);
     }
   }
+}
+
+.backgroundshadow {
+  position: absolute;
+  top: 2171px;
+  height: 1002px;
+  overflow: hidden;
+  object-position: right;
+  z-index: -2;
+}
+
+.small-overlay {
+  position: relative;
+  left: 56px;
+  color: white;
+  padding: 4px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  bottom: 290px;
+  .backgroundicon {
+    width: 240px;
+  }
+  .interests {
+    position: relative;
+    top: -166px;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .small-icons {
+    width: 58px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    top: -130px;
+    left: 95px;
+    .learnicon {
+      position: relative;
+      @include fcc;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1;
+      color: black;
+      white-space: nowrap;
+    }
+  }
+}
+
+.purple:hover .small-overlay {
+  opacity: 1;
+}
+
+.purple:hover .purple-text {
+  color: white !important;
+}
+
+.purple:hover .purple-icon {
+  filter: brightness(0) invert(1);
 }

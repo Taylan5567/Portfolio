@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
-  gap: 35px;
+  gap: 200px;
   text-align: right;
   max-height: 339px;
   img {
@@ -27,6 +27,11 @@
       border-radius: 10px;
       color: white;
       text-decoration: none;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba(112, 230, 28, 1);
+      }
     }
     .github {
       padding: 15px 30px;
@@ -34,6 +39,13 @@
       color: white;
       border: 1px solid rgba(112, 230, 28, 1);
       text-decoration: none;
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba(112, 230, 28, 1);
+        border: 1px solid rgba(112, 230, 28, 1);
+      }
     }
   }
 }
@@ -42,7 +54,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 35px;
+  gap: 200px;
   text-align: left;
   max-height: 339px;
   img {
@@ -65,6 +77,11 @@
       border-radius: 10px;
       color: white;
       text-decoration: none;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba(112, 230, 28, 1);
+      }
     }
     .github {
       padding: 15px 30px;
@@ -72,6 +89,13 @@
       color: white;
       border: 1px solid rgba(112, 230, 28, 1);
       text-decoration: none;
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba(112, 230, 28, 1);
+        border: 1px solid rgba(112, 230, 28, 1);
+      }
     }
   }
 }

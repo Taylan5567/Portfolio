@@ -1,0 +1,50 @@
+@media screen and (max-width: 1350px) {
+  .container {
+    justify-content: space-around !important;
+  }
+  .right {
+    margin-left: 0 !important;
+    width: 652px !important;
+  }
+  h1 {
+    font-size: 70px !important;
+  }
+  h2 {
+    font-size: 49px !important;
+  }
+  .iam {
+    width: 112px !important;
+    height: 54px !important;
+    font-size: 50px !important;
+  }
+
+  .info-section {
+    width: 690px !important;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .scroll-indicator {
+    p {
+      display: none !important;
+    }
+  }
+  .container {
+    flex-direction: column !important;
+  }
+  .right {
+    gap: 0 !important;
+  }
+  .left {
+    margin-left: 0 !important;
+  }
+  .info-section {
+    justify-content: center !important;
+    h1 {
+      font-size: 60px !important;
+    }
+    h2 {
+      font-size: 42px !important;
+    }
+  }
+}

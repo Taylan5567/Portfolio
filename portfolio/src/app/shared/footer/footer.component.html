@@ -1,20 +1,28 @@
-<div class="footercontainer">
-  <footer>
-    <div class="footername">
-      <img
-        class="logo"
-        src="./../../../assets/img/logo/logo_taylan_weiss.png"
-      />
-      <p class="imprint">{{ "FOOTER.IMPRINT" | translate }}</p>
-    </div>
-    <div class="footercopy">
-      <p>© 2025 Özgür Taylan Umucu</p>
-    </div>
+<section class="footcontainer">
+  <hr class="footer" />
+  <div class="footercontainer">
+    <footer>
+      <div class="footername">
+        <img
+          class="logo"
+          src="./../../../assets/img/logo/logo_taylan_weiss.png"
+          (click)="scrollToSection('header')"
+        />
+        <p class="imprint">{{ "FOOTER.IMPRINT" | translate }}</p>
+      </div>
+      <div class="footercopy">
+        <p>© 2025 Özgür Taylan Umucu</p>
+      </div>
 
-    <div class="footericons">
-      <img src="./../../../assets/img/icons/github.png" alt="" />
-      <img src="./../../../assets/img/icons/mail.png" alt="" />
-      <img src="./../../../assets/img/icons/linkedin.png" alt="" />
-    </div>
-  </footer>
-</div>
+      <div class="footericons">
+        <img src="./../../../assets/img/icons/github.svg" class="icon" alt="" />
+        <img src="./../../../assets/img/icons/mail.svg" class="icon" alt="" />
+        <img
+          src="./../../../assets/img/icons/linkedin.svg"
+          class="icon"
+          alt=""
+        />
+      </div>
+    </footer>
+  </div>
+</section>

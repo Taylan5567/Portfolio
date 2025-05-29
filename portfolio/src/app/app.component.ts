@@ -9,7 +9,6 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ReviewComponent } from './review/review.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +24,7 @@ import { ReviewComponent } from './review/review.component';
     ContactComponent,
     SkillsComponent,
     PortfolioComponent,
-    ReviewComponent,
+    RouterModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

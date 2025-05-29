@@ -1,56 +1,133 @@
 <section class="skills">
-  <div class="icons">
-    <div class="icon">
-      <img src="./../../assets/img/icons/html.png" alt="HTML5" />
-      <p>HTML5</p>
+  <div class="mobile">
+    <div class="myskills mobile">
+      <div class="mobile-header">
+        <h1 class="title">{{ "SKILLS.SUBTITLE" | translate }}</h1>
+        <div class="line"></div>
+      </div>
     </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/css.png" alt="CSS" />
-      <p>CSS</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/script.png" alt="JavaScript" />
-      <p>JavaScript</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/typescript.png" alt="TypeScript" />
-      <p>TypeScript</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/angular.png" alt="Angular" />
-      <p>Angular</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/firebase.png" alt="Firebase" />
-      <p>Firebase</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/git.png" alt="Git" />
-      <p>Git</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/api.png" alt="RestApi" />
-      <p>Rest Api</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/scrum.png" alt="scrum" />
-      <p>Scrum</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/Material.png" alt="MaterialDesign" />
-      <p>Material Design</p>
-    </div>
-    <div class="icon">
-      <img src="./../../assets/img/icons/wordpress.png" alt="Wordpress" />
-      <p>Wordpress</p>
-    </div>
-    <div class="icon">
-      <img
-        class="purple-icon"
-        src="./../../assets/img/icons/learning.svg"
-        alt="Continuallylearning"
-      />
-      <p class="purple-text">{{ "SKILLS.TITLE" | translate }}</p>
+    <p class="subtext">
+      {{ "SKILLS.DESCRIPTION" | translate }}
+    </p>
+    <div class="icons">
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/html.png"
+          alt="HTML5"
+        />
+        <p>HTML5</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/css.png"
+          alt="CSS"
+        />
+        <p>CSS</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/script.png"
+          alt="JavaScript"
+        />
+        <p>JavaScript</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/typescript.png"
+          alt="TypeScript"
+        />
+        <p>TypeScript</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/angular.png"
+          alt="Angular"
+        />
+        <p>Angular</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/firebase.png"
+          alt="Firebase"
+        />
+        <p>Firebase</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/git.png"
+          alt="Git"
+        />
+        <p>Git</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/api.png"
+          alt="RestApi"
+        />
+        <p>Rest Api</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/scrum.png"
+          alt="scrum"
+        />
+        <p>Scrum</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/Material.png"
+          alt="MaterialDesign"
+        />
+        <p>Material Design</p>
+      </div>
+      <div class="icon">
+        <img
+          class="iconmove"
+          src="./../../assets/img/icons/wordpress.png"
+          alt="Wordpress"
+        />
+        <p>Wordpress</p>
+      </div>
+      <div class="icon purple">
+        <img
+          class="purple-icon"
+          src="./../../assets/img/icons/learning.svg"
+          alt="Continuallylearning"
+        />
+        <p class="purple-text">{{ "SKILLS.TITLE" | translate }}</p>
+        <div class="small-overlay">
+          <img
+            class="backgroundicon"
+            src="./../../assets/img/icons/nextlearning.svg"
+            alt=""
+          />
+          <p class="interests">{{ "SKILLS.INTERESTS" | translate }}</p>
+          <div class="small-icons">
+            <div class="learnicon">
+              <img src="./../../assets/img/icons/React.svg" alt="" />
+              <p class="descriptionicon">React</p>
+            </div>
+            <div class="learnicon">
+              <img src="./../../assets/img/icons/Vue.svg" alt="" />
+              <p class="descriptionicon">Vue JS</p>
+            </div>
+            <div class="learnicon">
+              <img src="./../../assets/img/icons/java.svg" alt="" />
+              <p class="descriptionicon">Java</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="myskills">
@@ -72,6 +149,13 @@
       {{ "SKILLS.PASSION" | translate }}
     </p>
 
-    <button class="contact-btn">{{ "SKILLS.CONTACT" | translate }}</button>
+    <button (click)="scrollToSection('contact')" class="contact-btn">
+      {{ "SKILLS.CONTACT" | translate }}
+    </button>
   </div>
 </section>
+<img
+  src="./../../assets/img/images/shadows/shadowportfolio.svg"
+  alt=""
+  class="backgroundshadow"
+/>
