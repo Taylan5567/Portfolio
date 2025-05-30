@@ -1,0 +1,117 @@
+@use "@angular/material" as mat;
+@import "./mobileheader.mobile.scss";
+@import "./../header.component.scss";
+
+.fullscreen-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 29, 47, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+
+  transform: translateX(100%); // Sidebar ist außerhalb des Viewports
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+
+  &.open {
+    transform: translateX(0); // Sidebar wird sichtbar
+    pointer-events: all;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &.closing {
+    transform: translateX(100%); // Sidebar fährt heraus
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.sidebar-content {
+  color: white;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 99999;
+
+  mat-nav-list {
+    @include fcc;
+    flex-direction: column !important;
+    text-align: center;
+    gap: 30px;
+    position: relative;
+    top: 60px;
+  }
+}
+
+li {
+  @include fcc;
+}
+
+mat-icon {
+  font-family: "Material Icons" !important;
+  color: white;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  position: relative;
+  color: white;
+  font-size: 23px;
+  text-decoration: none;
+
+  &:hover {
+    color: #70e61c;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9747ff;
+    transition: width 0.5s ease-in-out;
+    opacity: 1 !important;
+    z-index: 9999;
+  }
+
+  &:hover::after {
+    opacity: 1 !important;
+    width: 50% !important;
+  }
+}
+
+.navLangs {
+  text-decoration: none;
+  color: white;
+  padding: 5px 8px;
+  @include fcc;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 10px;
+  line-height: 120%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: transparent !important;
+    color: #70e61c;
+  }
+  &.active {
+    color: #70e61c !important;
+  }
+}

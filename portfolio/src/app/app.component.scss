@@ -5,12 +5,5 @@
 
 .portfolio {
   width: 100%;
-}
-
-.hero,
-.about,
-.appskills,
-.projects,
-.contact {
-  margin-bottom: 133px;
+  box-sizing: border-box;
 }

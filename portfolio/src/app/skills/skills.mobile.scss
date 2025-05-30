@@ -15,7 +15,7 @@
   }
   .icons {
     grid-template-columns: repeat(3, 1fr) !important;
-    height: 80vh !important;
+    height: 60vh !important;
   }
   .myskills.line {
     width: 100vw !important;
@@ -25,7 +25,6 @@
 @media screen and (max-width: 1070px) {
   .skills {
     left: 50px;
-    top: 300px;
   }
   .line {
     width: 95vw !important;
@@ -52,19 +51,37 @@
   }
   .icons {
     grid-template-columns: repeat(4, 1fr) !important;
+    height: 60vh !important;
   }
 
   .myskills {
     max-width: none !important;
+    @include fcc;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
   }
 
   .mobile-header {
     justify-content: flex-end !important;
+  }
+  .highlight {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 !important;
+  }
+  .bottom-text {
+    margin: 0 !important;
+  }
+  .contact-btn {
+    margin: 0 !important;
   }
 }
 
 @media screen and (max-width: 600px) {
   .icons {
     gap: 40px !important;
+    height: 40vh !important;
   }
 }

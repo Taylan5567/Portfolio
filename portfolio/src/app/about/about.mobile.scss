@@ -21,7 +21,7 @@
   .aboutmain {
     padding: 0 !important;
     gap: 102px;
-    top: 200px !important;
+    top: 330px !important;
   }
 }
 
@@ -43,8 +43,8 @@
 @media screen and (max-width: 600px) {
   .aboutmain {
     @include fcc;
-    height: 50vh !important;
-    top: 200px;
+    height: 100vh !important;
+    top: 150px !important;
   }
   .aboutleft {
     justify-items: flex-start !important;

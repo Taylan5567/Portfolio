@@ -6,10 +6,12 @@ section {
   flex-direction: column;
   max-width: 1340px;
   position: relative;
-  top: 133px;
+  top: 450px;
   gap: 30px;
   color: white;
   margin: 0 auto;
+  height: 213px;
+  width: 100%;
 }
 
 .linecontact {
@@ -51,8 +53,8 @@ section {
 }
 
 .contactshadow {
-  position: absolute;
-  top: 4579px;
+  position: relative;
+  top: 444px;
   height: 920px;
   overflow: hidden;
   object-position: right;

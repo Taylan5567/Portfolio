@@ -4,11 +4,18 @@ import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { AppComponent } from '../../app.component';
 import { TranslateService } from '@ngx-translate/core';
+import { MobileHeaderComponent } from './mobile-header/mobile-header.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, TranslateModule],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    MobileHeaderComponent,
+    MatIconModule,
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })

@@ -24,6 +24,15 @@
   body {
     background-color: #141d2f;
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

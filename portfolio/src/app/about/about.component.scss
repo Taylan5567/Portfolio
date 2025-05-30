@@ -5,12 +5,14 @@
   @include poppins;
   position: relative;
   z-index: 1;
-  height: 80vh;
+  height: 100vh;
   color: white;
   max-width: 1340px;
   margin: 0 auto;
   padding-left: 100px;
   transition: all 0.5s ease;
+  top: 250px;
+  width: 100%;
 }
 
 .about {

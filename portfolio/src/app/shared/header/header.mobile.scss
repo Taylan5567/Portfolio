@@ -1,0 +1,15 @@
+app-mobile-header {
+  display: none;
+}
+
+@media screen and (max-width: 930px) {
+  nav {
+    display: none !important;
+  }
+  app-mobile-header {
+    display: flex !important;
+  }
+  .headercontainer {
+    padding: 37px 30px !important;
+  }
+}

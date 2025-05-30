@@ -1,5 +1,9 @@
 @import "./../../../styles.scss";
 
+section {
+  width: 100%;
+}
+
 .project-right {
   display: flex;
   flex-direction: row-reverse;

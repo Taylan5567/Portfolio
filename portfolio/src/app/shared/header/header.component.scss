@@ -1,4 +1,6 @@
+@use "@angular/material" as mat;
 @import "./../../../styles.scss";
+@import "./header.mobile.scss";
 
 .container {
   background-color: rgba(20, 29, 47, 1);

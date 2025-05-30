@@ -1,0 +1,42 @@
+<button mat-icon-button (click)="toggleSidenav()">
+  <mat-icon *ngIf="!isOpen">density_medium</mat-icon>
+  <mat-icon *ngIf="isOpen">close</mat-icon>
+</button>
+
+<div class="fullscreen-sidebar" [class.open]="isOpen">
+  <div class="sidebar-content" (click)="$event.stopPropagation()">
+    <div class="headercontainer">
+      <header>
+        <img
+          class="logo"
+          src="./../../../assets/img/logo/logo_taylan_weiss.png"
+          href="/"
+        />
+        <button mat-icon-button (click)="closeDrawer()">
+          <mat-icon *ngIf="isOpen">close</mat-icon>
+        </button>
+      </header>
+    </div>
+    <mat-nav-list>
+      <a class="nav-link" href="#">Startseite</a>
+      <a class="nav-link" href="#">Über uns</a>
+      <a class="nav-link" href="#">Leistungen</a>
+      <a class="nav-link" href="#">Kontakt</a>
+      <li>
+        <a
+          class="navLangs"
+          [class.active]="checklanguage('de')"
+          (click)="switchLang('de'); closeDrawer()"
+          >DE</a
+        >
+        /
+        <a
+          class="navLangs"
+          [class.active]="checklanguage('en')"
+          (click)="switchLang('en'); closeDrawer()"
+          >EN</a
+        >
+      </li>
+    </mat-nav-list>
+  </div>
+</div>
