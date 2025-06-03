@@ -12,6 +12,17 @@
   position: relative;
 }
 
+.slideabout {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.slideabout.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .about {
   display: flex;
   flex-direction: row;

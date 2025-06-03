@@ -26,20 +26,38 @@
       >
         Home
       </a>
-      <a class="nav-link" (click)="scrollToSection('about'); closeDrawer()">{{
-        "NAV.ABOUT" | translate
-      }}</a>
-      <a class="nav-link" (click)="scrollToSection('skills'); closeDrawer()">{{
-        "NAV.SKILLS" | translate
-      }}</a>
       <a
         class="nav-link"
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        [queryParams]="{ scrollTo: 'about' }"
+        (click)="scrollToSection('about'); closeDrawer()"
+        >{{ "NAV.ABOUT" | translate }}</a
+      >
+      <a
+        class="nav-link"
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        [queryParams]="{ scrollTo: 'skills' }"
+        (click)="scrollToSection('skills'); closeDrawer()"
+        >{{ "NAV.SKILLS" | translate }}</a
+      >
+      <a
+        class="nav-link"
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        [queryParams]="{ scrollTo: 'portfolio' }"
         (click)="scrollToSection('portfolio'); closeDrawer()"
         >{{ "NAV.PORTFOLIO" | translate }}</a
       >
-      <a class="nav-link" (click)="scrollToSection('contact'); closeDrawer()">{{
-        "NAV.CONTACT" | translate
-      }}</a>
+      <a
+        class="nav-link"
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+        [queryParams]="{ scrollTo: 'contact' }"
+        (click)="scrollToSection('contact'); closeDrawer()"
+        >{{ "NAV.CONTACT" | translate }}</a
+      >
       <li>
         <a
           class="navLangs"

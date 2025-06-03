@@ -39,12 +39,16 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .solve {
     width: calc(100% - 24px);
   }
   h1 {
     font-size: 45px !important;
+  }
+
+  input {
+    padding: 0 16px !important;
   }
 
   .submitbtn {

@@ -36,7 +36,9 @@
     "READ_PRIVACY": "Ich habe die",
     "READ_PRIVACY_NEXT": "gelesen und stimme der Datenverarbeitung zu.",
     "ACCEPT_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
-    "READ_PRIVACY_TEXT": "Datenschutzerklärung"
+    "READ_PRIVACY_TEXT": "Datenschutzerklärung",
+    "SENDING": "Nachricht wird gesendet...",
+    "SENT_SUCCESS": "Deine Nachricht wurde erfolgreich versendet!"
   },
   "ABOUT": {
     "TITLE": "Über mich",

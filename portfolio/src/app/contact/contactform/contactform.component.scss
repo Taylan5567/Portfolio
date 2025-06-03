@@ -1,17 +1,17 @@
 @use "@angular/material" as mat;
-@import "./contactform.mobile.scss"; // mobile Anpassungen zuletzt laden
+@import "./contactform.mobile.scss";
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 32px;
+  gap: 20px;
 }
 
 .input-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
   align-items: center;
 }
@@ -52,10 +52,16 @@ textarea:focus {
 }
 
 .error {
-  color: rgba(230, 28, 64, 1);
-  font-weight: 400;
+  height: 18px;
+  display: block;
   font-size: 14px;
-  animation: ease-in-out 300ms;
+  color: rgba(230, 28, 64, 1);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+
+  &:empty {
+    opacity: 0;
+  }
 }
 
 input.ng-invalid.ng-touched,
@@ -86,6 +92,7 @@ textarea.ng-valid.ng-touched {
     color: white;
     font-size: 23px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0;
 
     &:disabled {
       background-color: rgba(182, 182, 182, 1);
@@ -97,7 +104,7 @@ textarea.ng-valid.ng-touched {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .ppolice {
@@ -163,5 +170,72 @@ input[type="checkbox"] {
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgb(20, 29, 47, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.overlay-box {
+  background: rgb(20, 29, 47);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  color: #141d2f;
+  font-size: 18px;
+  width: 90%;
+  max-width: 400px;
+  animation: slideUp 0.3s ease-out;
+  color: white;
+}
+
+.success-icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(151, 71, 255, 0.2);
+  border-top: 4px solid rgba(151, 71, 255, 1);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 20px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

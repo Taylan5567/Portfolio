@@ -23,12 +23,21 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
-    this.translate.use('en');
+
+    const savedLang = localStorage.getItem('appLanguage');
+    const langToUse =
+      savedLang && this.translate.getLangs().includes(savedLang)
+        ? savedLang
+        : 'en';
+
+    this.translate.use(langToUse);
   }
 
   switchLanguage(lang: string) {
-    this.translate.use(lang);
-    this.translate.currentLang = lang;
+    if (this.translate.getLangs().includes(lang)) {
+      this.translate.use(lang);
+      localStorage.setItem('appLanguage', lang);
+    }
   }
 
   getCurrentLanguage() {

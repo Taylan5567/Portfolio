@@ -39,6 +39,9 @@ footer {
   @include fsc;
   height: 291px;
 
+  max-width: 1440px;
+  margin: 0 auto;
+
   .footercopy {
     font-size: 23px;
     font-weight: 400;

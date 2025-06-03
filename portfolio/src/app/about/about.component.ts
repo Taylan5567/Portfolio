@@ -18,4 +18,24 @@ export class AboutComponent {
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
+
+  ngAfterViewInit() {
+    const section = document.querySelector('.slideabout');
+
+    if (section) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+
+      observer.observe(section);
+    }
+  }
 }

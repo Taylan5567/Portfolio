@@ -11,9 +11,11 @@
         required
         pattern="^[A-Za-zÄÖÜäöüß\s\-']{2,}$"
       />
-      @if (name.invalid && name.touched) {
-      <span class="error">{{ "CONTACTFORM.NAME_REQUIRED" | translate }}</span>
-      }
+      <span class="error"
+        >@if (name.invalid && name.touched) {
+        {{ "CONTACTFORM.NAME_REQUIRED" | translate }}
+        }</span
+      >
     </div>
 
     <div class="input-group">
@@ -27,9 +29,12 @@
         required
         #email="ngModel"
       />
-      @if (email.invalid && email.touched) {
-      <span class="error">{{ "CONTACTFORM.EMAIL_INVALID" | translate }}</span>
-      }
+
+      <span class="error"
+        >@if (email.invalid && email.touched) {
+        {{ "CONTACTFORM.EMAIL_INVALID" | translate }}
+        }</span
+      >
     </div>
 
     <div class="input-group">
@@ -39,12 +44,15 @@
         name="phone"
         type="tel"
         pattern="^(\+49|0)[\s()\-]*[1-9][0-9\s()\-]{7,14}$"
-        placeholder="Your phone number... for a callback"
+        placeholder="Your phone number... for a callback (optional)"
         #phone="ngModel"
       />
-      @if (phone.invalid && phone.touched) {
-      <span class="error">{{ "CONTACTFORM.PHONE_INVALID" | translate }}</span>
-      }
+
+      <span class="error"
+        >@if (phone.invalid && phone.touched) {
+        {{ "CONTACTFORM.PHONE_INVALID" | translate }}
+        }</span
+      >
     </div>
 
     <div class="input-group">
@@ -57,11 +65,11 @@
         required
         #message="ngModel"
       ></textarea>
-      @if (message.invalid && message.touched) {
-      <span class="error">{{
-        "CONTACTFORM.MESSAGE_TOO_SHORT" | translate
-      }}</span>
-      }
+      <span class="error"
+        >@if (message.invalid && message.touched) {
+        {{ "CONTACTFORM.MESSAGE_TOO_SHORT" | translate }}
+        }</span
+      >
     </div>
 
     <div class="submitbtn">
@@ -87,10 +95,11 @@
           {{ "CONTACTFORM.READ_PRIVACY_NEXT" | translate }}
         </p>
       </div>
-      @if (checkbox.touched && !contactData.checkbox) {
-      <span class="error">{{ "CONTACTFORM.ACCEPT_PRIVACY" | translate }}</span>
-      }
-
+      <span class="error"
+        >@if (checkbox.touched && !contactData.checkbox) {
+        {{ "CONTACTFORM.ACCEPT_PRIVACY" | translate }}
+        }</span
+      >
       <div class="btn">
         <input
           id="submit"
@@ -101,4 +110,16 @@
       </div>
     </div>
   </form>
+</div>
+<div class="overlay" *ngIf="isSubmitting || submitSuccess">
+  <div class="overlay-box">
+    <ng-container *ngIf="isSubmitting">
+      <div class="loader"></div>
+      <p>{{ "CONTACTFORM.SENDING" | translate }}</p>
+    </ng-container>
+    <ng-container *ngIf="submitSuccess">
+      <div class="success-icon">✅</div>
+      <p>{{ "CONTACTFORM.SENT_SUCCESS" | translate }}</p>
+    </ng-container>
+  </div>
 </div>

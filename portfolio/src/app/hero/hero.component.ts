@@ -28,4 +28,24 @@ export class HeroComponent implements OnInit {
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
+
+  ngAfterViewInit() {
+    const section = document.querySelector('.slidehero');
+
+    if (section) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+
+      observer.observe(section);
+    }
+  }
 }

@@ -11,6 +11,17 @@
   transition: font-size 0.3s ease;
 }
 
+.slidehero {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.slidehero.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .left {
   position: relative;
   z-index: -1;

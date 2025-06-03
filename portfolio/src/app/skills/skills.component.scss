@@ -13,6 +13,17 @@ section {
   margin: 0 auto;
 }
 
+.slideskill {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.slideskill.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .icons {
   max-width: 664px;
   height: 404px;
@@ -103,6 +114,7 @@ section {
     font-weight: 700;
     margin: 0 100px 16px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
     .purple {
       color: #a259ff;
     }

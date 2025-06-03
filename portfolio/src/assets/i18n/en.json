@@ -36,7 +36,9 @@
     "READ_PRIVACY": "I've read",
     "READ_PRIVACY_NEXT": "and agree to the processing of my data as outlined.",
     "ACCEPT_PRIVACY": "Please accept the privacy policy.",
-    "READ_PRIVACY_TEXT": "privacy policy"
+    "READ_PRIVACY_TEXT": "privacy policy",
+    "SENDING": "Message is being sent...",
+    "SENT_SUCCESS": "Your message was sent successfully!"
   },
   "ABOUT": {
     "TITLE": "About me",

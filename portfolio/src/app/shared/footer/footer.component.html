@@ -3,10 +3,16 @@
   <div class="footercontainer">
     <footer>
       <div class="footername">
-        <img
-          class="logo"
-          src="./../../../assets/img/logo/logo_taylan_weiss.png"
-        />
+        <a
+          [routerLink]="['/home']"
+          routerLinkActive="router-link-active"
+          (click)="scrollToTop()"
+        >
+          <img
+            class="logo"
+            src="./../../../assets/img/logo/logo_taylan_weiss.png"
+          />
+        </a>
         <a routerLink="/imprint" (click)="scrollToTop()"
           ><p class="imprint">{{ "FOOTER.IMPRINT" | translate }}</p></a
         >

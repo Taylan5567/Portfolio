@@ -14,6 +14,17 @@ section {
   width: 100%;
 }
 
+.slide-trigger {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.slide-trigger.in-view {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .myprojects {
   gap: 80px;
   display: flex;
@@ -74,4 +85,10 @@ section {
 
 .mobile {
   display: none;
+}
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
