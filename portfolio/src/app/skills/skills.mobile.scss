@@ -15,7 +15,6 @@
   }
   .icons {
     grid-template-columns: repeat(3, 1fr) !important;
-    height: 60vh !important;
   }
   .myskills.line {
     width: 100vw !important;
@@ -36,8 +35,11 @@
     display: none !important;
     max-width: none !important;
   }
+
+  section {
+    gap: 100px !important;
+  }
   .skills {
-    height: 100vh !important;
     left: 0;
   }
   .myskills.mobile {
@@ -51,7 +53,6 @@
   }
   .icons {
     grid-template-columns: repeat(4, 1fr) !important;
-    height: 60vh !important;
   }
 
   .myskills {
@@ -60,6 +61,7 @@
     flex-direction: column;
     gap: 20px;
     width: 80%;
+    margin-top: 20%;
   }
 
   .mobile-header {
@@ -70,6 +72,7 @@
     justify-content: center;
     gap: 8px;
     margin: 0 !important;
+    white-space: nowrap;
   }
   .bottom-text {
     margin: 0 !important;
@@ -79,9 +82,51 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .small-overlay {
+    right: 56px !important;
+    left: auto !important;
+    img {
+      transform: scaleX(-1);
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .icons {
     gap: 40px !important;
-    height: 40vh !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .icons {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .highlight {
+    font-size: 24px !important;
+  }
+  .contact-btn {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .myskills {
+    align-items: flex-end !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 45px !important;
+  }
+  .icons {
+    gap: 20px !important;
+  }
+  .highlight {
+    font-size: 24px !important;
+  }
+
+  .backgroundshadow {
+    width: 100%;
   }
 }

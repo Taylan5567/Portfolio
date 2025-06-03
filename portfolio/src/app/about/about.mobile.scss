@@ -21,7 +21,6 @@
   .aboutmain {
     padding: 0 !important;
     gap: 102px;
-    top: 330px !important;
   }
 }
 
@@ -43,8 +42,6 @@
 @media screen and (max-width: 600px) {
   .aboutmain {
     @include fcc;
-    height: 100vh !important;
-    top: 150px !important;
   }
   .aboutleft {
     justify-items: flex-start !important;
@@ -61,5 +58,36 @@
     width: 281px !important;
     height: 600px !important;
     top: 954px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutmain {
+    padding: 0 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .about {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+    gap: 40px !important;
+    height: auto !important;
+  }
+
+  h1 {
+    font-size: 48px !important;
+  }
+
+  .abouttext {
+    font-size: 14px !important;
+    gap: 20px !important;
+    width: 100% !important;
+
+    .text {
+      gap: 12px !important;
+    }
   }
 }

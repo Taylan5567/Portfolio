@@ -1,9 +1,29 @@
 .navbar {
-  position: relative;
   z-index: 9999;
+  position: sticky;
+  top: 0;
 }
 
 .portfolio {
   width: 100%;
   box-sizing: border-box;
+}
+
+.section {
+  gap: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
 }

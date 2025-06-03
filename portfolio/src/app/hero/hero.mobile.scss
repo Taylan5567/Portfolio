@@ -93,3 +93,19 @@
     }
   }
 }
+
+@media screen and (max-width: 380px) {
+  .info-section {
+    h1 {
+      font-size: 34px !important;
+    }
+    h2 {
+      font-size: 24px !important;
+    }
+    .iam {
+      width: 23px !important;
+      height: 43px !important;
+      font-size: 24px !important;
+    }
+  }
+}

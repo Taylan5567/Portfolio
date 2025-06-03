@@ -1,18 +1,20 @@
 <section>
-  <div class="head">
-    <div class="lineportfolio">
-      <div class="lineone"></div>
-      <h1>Portfolio</h1>
-      <div class="linetwo"></div>
+  <div class="mobilecontainer">
+    <div class="head">
+      <div class="lineportfolio">
+        <div class="lineone"></div>
+        <h1>Portfolio</h1>
+        <div class="linetwo"></div>
+      </div>
+      <p class="explore">
+        {{ "PORTFOLIO.DESCRIPTION" | translate }}
+      </p>
+      <app-projects class="myprojects"></app-projects>
     </div>
-    <p class="explore">
-      {{ "PORTFOLIO.DESCRIPTION" | translate }}
-    </p>
-    <app-projects class="myprojects"></app-projects>
   </div>
+  <img
+    src="./../../assets/img/images/shadows/portfolioshadow.svg"
+    alt=""
+    class="portfolioshadow"
+  />
 </section>
-<img
-  src="./../../assets/img/images/shadows/portfolioshadow.svg"
-  alt=""
-  class="portfolioshadow"
-/>

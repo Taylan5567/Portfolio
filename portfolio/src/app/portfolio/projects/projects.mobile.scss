@@ -1,0 +1,37 @@
+@media screen and (max-width: 1200px) {
+  .project-right,
+  .project-left {
+    flex-direction: column !important;
+    max-height: none !important;
+    gap: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+    img {
+      height: auto !important;
+      width: 320px !important;
+      object-fit: contain !important;
+    }
+  }
+  .porti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .project-content {
+    align-items: center !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h2 {
+    width: 80% !important;
+  }
+  p {
+    width: 99% !important;
+  }
+  .btn {
+    gap: 10px !important;
+  }
+}

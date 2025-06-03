@@ -1,16 +1,19 @@
 @import "./../../styles.scss";
+@import "./contact.mobile.scss";
+
+.contactcontainer {
+  position: relative;
+  margin-bottom: 100px;
+}
 
 section {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 1340px;
-  position: relative;
-  top: 450px;
   gap: 30px;
   color: white;
   margin: 0 auto;
-  height: 213px;
   width: 100%;
 }
 
@@ -20,7 +23,7 @@ section {
   align-items: center;
   gap: 32px;
   .lineone {
-    width: 105vw;
+    width: 100vw;
     height: 0px;
     background-color: rgb(151, 71, 255);
     border: 2px solid rgb(151, 71, 255);
@@ -53,13 +56,13 @@ section {
 }
 
 .contactshadow {
-  position: relative;
-  top: 444px;
-  height: 920px;
+  position: absolute;
+  height: 700px;
   overflow: hidden;
   object-position: right;
   z-index: -2;
   left: 0;
+  bottom: -100px;
 }
 
 .arrowup {

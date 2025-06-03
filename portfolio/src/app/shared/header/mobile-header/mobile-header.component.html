@@ -18,10 +18,20 @@
       </header>
     </div>
     <mat-nav-list>
-      <a class="nav-link" href="#">Startseite</a>
-      <a class="nav-link" href="#">Über uns</a>
-      <a class="nav-link" href="#">Leistungen</a>
-      <a class="nav-link" href="#">Kontakt</a>
+      <a class="nav-link" (click)="scrollToSection('header'); closeDrawer()">{{
+        "NAV.ABOUT" | translate
+      }}</a>
+      <a class="nav-link" (click)="scrollToSection('skills'); closeDrawer()">{{
+        "NAV.SKILLS" | translate
+      }}</a>
+      <a
+        class="nav-link"
+        (click)="scrollToSection('portfolio'); closeDrawer()"
+        >{{ "NAV.PORTFOLIO" | translate }}</a
+      >
+      <a class="nav-link" (click)="scrollToSection('contact'); closeDrawer()">{{
+        "NAV.CONTACT" | translate
+      }}</a>
       <li>
         <a
           class="navLangs"

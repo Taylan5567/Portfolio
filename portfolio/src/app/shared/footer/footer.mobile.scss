@@ -1,0 +1,14 @@
+@media screen and (max-width: 1000px) {
+  .imprintmobile {
+    display: block !important;
+  }
+  .imprint {
+    display: none !important;
+  }
+  footer {
+    flex-direction: column;
+    padding: 5px 0 30px 0;
+
+    white-space: nowrap !important;
+  }
+}

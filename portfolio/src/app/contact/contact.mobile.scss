@@ -1,0 +1,53 @@
+@media screen and (max-width: 1350px) {
+  .contact {
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+  .solve {
+    margin-left: 0 !important;
+    text-align: center !important;
+  }
+  .arrowup {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .contact {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  .contactshadow {
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contactshadow {
+    height: 300px !important;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .contact {
+    align-items: stretch !important;
+  }
+  .solve {
+    text-align: left !important;
+    margin-left: 24px !important;
+    width: calc(100% - 24px) !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .solve {
+    width: calc(100% - 24px);
+  }
+  h1 {
+    font-size: 45px !important;
+  }
+
+  .submitbtn {
+    @include fcc;
+  }
+}

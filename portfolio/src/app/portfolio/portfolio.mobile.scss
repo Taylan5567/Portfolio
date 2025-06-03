@@ -1,0 +1,28 @@
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 70px !important;
+  }
+  .lineone {
+    width: 24px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 45px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolioshadow {
+    display: none;
+  }
+  .mobile {
+    display: flex !important;
+    position: absolute;
+    top: 370%;
+    z-index: -1;
+    width: 90%;
+    object-fit: contain !important;
+  }
+}

@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ContactformComponent } from './contactform/contactform.component';
 import { TranslateModule } from '@ngx-translate/core';
-
+import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { ViewportScroller } from '@angular/common';
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -9,11 +11,12 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {
-  scrollToSection(sectionId: string): void {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+export class ContactComponent implements OnInit {
+  constructor(private scroller: ViewportScroller) {}
+
+  ngOnInit(): void {}
+
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

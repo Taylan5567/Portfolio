@@ -1,32 +1,34 @@
-<section id="contact">
-  <div class="linecontact">
-    <div class="lineone"></div>
-    <h1>{{ "CONTACT.TITLE" | translate }}</h1>
-  </div>
-  <div class="contact">
-    <div class="solve">
-      <h2>{{ "CONTACT.QUESTION" | translate }}</h2>
-      <p>
-        {{ "CONTACT.TEXT" | translate }}
-      </p>
-      <p>
-        {{ "CONTACT.CTA" | translate }}
-        <span>{{ "CONTACT.BUTTON" | translate }}</span>
-      </p>
+<div class="contactcontainer">
+  <section>
+    <div class="linecontact">
+      <div class="lineone"></div>
+      <h1>{{ "CONTACT.TITLE" | translate }}</h1>
     </div>
-    <app-contactform></app-contactform>
-  </div>
-  <div class="arrowup">
-    <img
-      src="./../../assets/img/images/shadows/arrow-down-line.svg"
-      alt=""
-      class="arrow"
-      (click)="scrollToSection('header')"
-    />
-  </div>
-</section>
-<img
-  src="./../../assets/img/images/shadows/contactshadow.svg"
-  alt=""
-  class="contactshadow"
-/>
+    <div class="contact">
+      <div class="solve">
+        <h2>{{ "CONTACT.QUESTION" | translate }}</h2>
+        <p>
+          {{ "CONTACT.TEXT" | translate }}
+        </p>
+        <p>
+          {{ "CONTACT.CTA" | translate }}
+          <span>{{ "CONTACT.BUTTON" | translate }}</span>
+        </p>
+      </div>
+      <app-contactform></app-contactform>
+    </div>
+    <div class="arrowup">
+      <img
+        src="./../../assets/img/images/shadows/arrow-down-line.svg"
+        alt=""
+        class="arrow"
+        (click)="scrollToTop()"
+      />
+    </div>
+  </section>
+  <img
+    src="./../../assets/img/images/shadows/contactshadow.svg"
+    alt=""
+    class="contactshadow"
+  />
+</div>

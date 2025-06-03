@@ -1,4 +1,9 @@
 @import "./../../styles.scss";
+@import "./portfolio.mobile.scss";
+
+.mobilecontainer {
+  position: relative;
+}
 
 section {
   margin: 0 auto;
@@ -6,9 +11,7 @@ section {
   justify-content: center;
   max-width: 1304px !important;
   box-sizing: border-box;
-  position: relative;
   width: 100%;
-  height: 100vh;
 }
 
 .myprojects {
@@ -40,7 +43,7 @@ section {
     border-radius: 50px;
   }
   .linetwo {
-    width: 105vw;
+    width: 100vw;
     height: 0px;
     background-color: rgb(151, 71, 255);
     border: 2px solid rgb(151, 71, 255);
@@ -60,11 +63,15 @@ section {
 
 .portfolioshadow {
   position: absolute;
-  top: 3279px;
+  top: 2945px;
   height: 920px;
   overflow: hidden;
   object-position: right;
   z-index: -2;
   transform: scaleX(-1);
   right: 0;
+}
+
+.mobile {
+  display: none;
 }

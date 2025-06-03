@@ -2,6 +2,10 @@
 @import "./mobileheader.mobile.scss";
 @import "./../header.component.scss";
 
+a {
+  cursor: pointer;
+}
+
 .fullscreen-sidebar {
   position: fixed;
   top: 0;
@@ -12,23 +16,21 @@
   backdrop-filter: blur(6px);
   z-index: 9999;
 
-  transform: translateX(100%); // Sidebar ist außerhalb des Viewports
+  transform: translateX(100%);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
     visibility 0.5s ease-in-out;
-  pointer-events: none;
   opacity: 0;
   visibility: hidden;
 
   &.open {
-    transform: translateX(0); // Sidebar wird sichtbar
+    transform: translateX(0);
     pointer-events: all;
     opacity: 1;
     visibility: visible;
   }
 
   &.closing {
-    transform: translateX(100%); // Sidebar fährt heraus
-    pointer-events: none;
+    transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
   }

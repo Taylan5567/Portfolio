@@ -22,9 +22,6 @@ import { MatIconModule } from '@angular/material/icon';
 export class HeaderComponent {
   constructor(private languageService: AppComponent) {
     this.languageService.getCurrentLanguage();
-    console.log(
-      'Current language: ' + this.languageService.getCurrentLanguage()
-    );
   }
   switchLang(lang: string) {
     this.languageService.switchLanguage(lang);
@@ -39,7 +36,10 @@ export class HeaderComponent {
   scrollToSection(sectionId: string): void {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const yOffset = -122;
+      const y =
+        element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
 }

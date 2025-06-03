@@ -3,16 +3,13 @@
 
 .aboutmain {
   @include poppins;
-  position: relative;
   z-index: 1;
-  height: 100vh;
   color: white;
   max-width: 1340px;
   margin: 0 auto;
   padding-left: 100px;
   transition: all 0.5s ease;
-  top: 250px;
-  width: 100%;
+  position: relative;
 }
 
 .about {
@@ -68,6 +65,7 @@ h1 {
     justify-content: flex-start;
     display: flex;
     gap: 16px;
+    z-index: -1;
   }
 }
 
@@ -80,5 +78,5 @@ h1 {
   overflow: hidden;
   object-fit: cover;
   object-position: left;
-  z-index: 0;
+  z-index: -1;
 }
