@@ -78,9 +78,12 @@
         />
         <p class="text">
           {{ "CONTACTFORM.READ_PRIVACY" | translate }}
-          <a class="policy" href="https://www.google.de">{{
-            "CONTACTFORM.READ_PRIVACY_TEXT" | translate
-          }}</a>
+          <a
+            class="policy"
+            routerLink="/private-policy"
+            (click)="scrollToTop()"
+            >{{ "CONTACTFORM.READ_PRIVACY_TEXT" | translate }}</a
+          >
           {{ "CONTACTFORM.READ_PRIVACY_NEXT" | translate }}
         </p>
       </div>

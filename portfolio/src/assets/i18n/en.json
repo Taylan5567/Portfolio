@@ -47,5 +47,82 @@
   },
   "HERO": {
     "SCROLL": "Scroll down"
+  },
+
+  "IMPRINT": {
+    "TITLE": "Legal Notice",
+    "OWNER": "Information according to § 5 TMG:",
+    "NAME": "Taylan Umucu",
+    "ADDRESS": "Arnold-Schönberg-Weg 21\n80939 Munich, Germany",
+    "CONTACT": "Contact:",
+    "PHONE": "Phone: +49 176 31631805",
+    "EMAIL": "Email: oezguer-taylan@umucu.de",
+    "RESPONSIBLE": "Responsible for content according to § 55 para. 2 RStV:",
+    "DISCLAIMER_TITLE": "Disclaimer",
+    "LIABILITY_CONTENT": "Liability for Content",
+    "LIABILITY_CONTENT_TEXT_1": "As a service provider, I am responsible for my own content on these pages according to § 7(1) TMG under general law. According to §§ 8 to 10 TMG, I am not obligated to monitor transmitted or stored external information or investigate circumstances that indicate illegal activity.",
+    "LIABILITY_CONTENT_TEXT_2": "Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the moment of knowledge of a specific legal violation. Upon becoming aware of such violations, I will remove the content immediately.",
+    "LIABILITY_LINKS": "Liability for Links",
+    "LIABILITY_LINKS_TEXT_1": "My website may contain links to external third-party websites over which I have no control. Therefore, I cannot assume any liability for these external contents. The respective provider or operator of the linked sites is always responsible for their content. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not identifiable at the time of linking.",
+    "LIABILITY_LINKS_TEXT_2": "A permanent content control of the linked pages is not reasonable without concrete evidence of a violation. If I become aware of any legal violations, I will remove such links immediately.",
+    "COPYRIGHT": "Copyright",
+    "COPYRIGHT_TEXT_1": "The content and works created by the website operator on these pages are subject to German copyright law. Reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this site are only permitted for private, non-commercial use.",
+    "COPYRIGHT_TEXT_2": "Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. Third-party content is marked as such. If you become aware of a copyright infringement, please let me know. If I become aware of violations, I will remove such content immediately.",
+    "NOTICE": "Note about this Website",
+    "NOTICE_TEXT": "This website is a private online portfolio by Taylan Umucu. It is solely intended to present personal projects, skills, and experience. It is not a commercial offering."
+  },
+
+  "PRIVACY": {
+    "TITLE": "Privacy Policy",
+    "INTRO": "Protecting your personal data is very important to me. Below you will find information on how your data is handled on this website.",
+    "GENERAL": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data by which you can be personally identified.",
+    "CONTROLLER": {
+      "TITLE": "Responsible Party",
+      "NAME": "Taylan Umucu",
+      "ADDRESS": "Arnold-Schönberg-Weg 21, 80939 Munich",
+      "PHONE": "Phone: +49 176 31631805",
+      "EMAIL": "Email: oezguer-taylan@umucu.de"
+    },
+    "DATA_COLLECTION": {
+      "TITLE": "Data Collection on This Website",
+      "SERVER_LOGS": {
+        "TITLE": "Server Log Files",
+        "TEXT": "The website provider automatically collects and stores information in server log files, which your browser automatically transmits.",
+        "LIST": [
+          "Browser type and version",
+          "Operating system used",
+          "Referrer URL",
+          "Host name of the accessing computer",
+          "Time of server request",
+          "IP address"
+        ]
+      },
+      "CONTACT": "If you contact me via email or form, your details will be stored to process your request. These details will not be shared without your consent."
+    },
+    "COOKIES": {
+      "TITLE": "Cookies",
+      "TEXT": "This website does not use cookies or tracking technologies. If this changes in the future, you will be informed accordingly."
+    },
+    "RIGHTS": {
+      "TITLE": "Your Rights",
+      "TEXT": "You have the right to obtain information about your stored personal data at any time. You also have the right to:",
+      "LIST": [
+        "Rectification",
+        "Deletion",
+        "Restriction of processing",
+        "Data portability",
+        "Object to certain processing",
+        "Withdraw your consent"
+      ]
+    },
+    "COMPLAINT": {
+      "TITLE": "Right to Lodge a Complaint",
+      "TEXT": "If you believe your data protection rights have been violated, you can contact the relevant supervisory authority:",
+      "AUTHORITY": "Bavarian Data Protection Authority (BayLDA), Promenade 18, 91522 Ansbach, www.lda.bayern.de"
+    },
+    "CHANGES": {
+      "TITLE": "Changes",
+      "TEXT": "I reserve the right to update this privacy policy from time to time to comply with legal requirements."
+    }
   }
 }

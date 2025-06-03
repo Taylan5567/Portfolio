@@ -17,8 +17,16 @@
         </button>
       </header>
     </div>
-    <mat-nav-list>
-      <a class="nav-link" (click)="scrollToSection('header'); closeDrawer()">{{
+    <mat-nav-list
+      ><a
+        class="nav-link"
+        [routerLink]="['/']"
+        routerLinkActive="router-link-active"
+        (click)="closeDrawer()"
+      >
+        Home
+      </a>
+      <a class="nav-link" (click)="scrollToSection('about'); closeDrawer()">{{
         "NAV.ABOUT" | translate
       }}</a>
       <a class="nav-link" (click)="scrollToSection('skills'); closeDrawer()">{{

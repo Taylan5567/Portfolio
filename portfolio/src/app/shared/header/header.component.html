@@ -9,6 +9,16 @@
       <nav>
         <ul class="nav">
           <li>
+            <a
+              class="navLink"
+              [routerLink]="['/']"
+              routerLinkActive="router-link-active"
+              (click)="scrollToTop()"
+            >
+              Home
+            </a>
+          </li>
+          <li>
             <a class="navLink" (click)="scrollToSection('about')">{{
               "NAV.ABOUT" | translate
             }}</a>

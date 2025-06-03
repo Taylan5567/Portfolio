@@ -47,5 +47,80 @@
   },
   "HERO": {
     "SCROLL": "Runter scrollen"
+  },
+  "IMPRINT": {
+    "TITLE": "Impressum",
+    "OWNER": "Angaben gemäß § 5 TMG:",
+    "NAME": "Taylan Umucu",
+    "ADDRESS": "Arnold-Schönberg-Weg 21\n80939 München",
+    "CONTACT": "Kontakt:",
+    "PHONE": "Telefon: 0176 31631805",
+    "EMAIL": "E-Mail: oezguer-taylan@umucu.de",
+    "RESPONSIBLE": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:",
+    "DISCLAIMER_TITLE": "Haftungsausschluss",
+    "LIABILITY_CONTENT": "Haftung für Inhalte",
+    "LIABILITY_CONTENT_TEXT_1": "Als Diensteanbieter bin ich gemäß § 7 Abs.1 TMG für eigene Inhalte auf dieser Website nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.",
+    "LIABILITY_CONTENT_TEXT_2": "Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.",
+    "LIABILITY_LINKS": "Haftung für Links",
+    "LIABILITY_LINKS_TEXT_1": "Mein Angebot enthält ggf. Links zu externen Webseiten Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.",
+    "LIABILITY_LINKS_TEXT_2": "Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.",
+    "COPYRIGHT": "Urheberrecht",
+    "COPYRIGHT_TEXT_1": "Die durch den Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.",
+    "COPYRIGHT_TEXT_2": "Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Solltest du trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.",
+    "NOTICE": "Hinweis zur Website",
+    "NOTICE_TEXT": "Diese Website stellt ein privates Online-Portfolio von Taylan Umucu dar. Sie dient ausschließlich der Präsentation persönlicher Projekte, Fähigkeiten und Erfahrungen. Es handelt sich nicht um ein gewerbliches Angebot."
+  },
+  "PRIVACY": {
+    "TITLE": "Datenschutzerklärung",
+    "INTRO": "Der Schutz deiner persönlichen Daten ist mir sehr wichtig. Nachfolgend informiere ich dich darüber, wie ich deine Daten auf dieser Website verarbeite.",
+    "GENERAL": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit deinen personenbezogenen Daten passiert, wenn du diese Website besuchst. Personenbezogene Daten sind alle Daten, mit denen du persönlich identifiziert werden kannst.",
+    "CONTROLLER": {
+      "TITLE": "Verantwortlicher",
+      "NAME": "Taylan Umucu",
+      "ADDRESS": "Arnold-Schönberg-Weg 21, 80939 München",
+      "PHONE": "Telefon: 0176 31631805",
+      "EMAIL": "E-Mail: oezguer-taylan@umucu.de"
+    },
+    "DATA_COLLECTION": {
+      "TITLE": "Datenerfassung auf dieser Website",
+      "SERVER_LOGS": {
+        "TITLE": "Server-Log-Dateien",
+        "TEXT": "Der Provider dieser Seite erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die dein Browser automatisch übermittelt.",
+        "LIST": [
+          "Browsertyp und Browserversion",
+          "Verwendetes Betriebssystem",
+          "Referrer URL",
+          "Hostname des zugreifenden Rechners",
+          "Uhrzeit der Serveranfrage",
+          "IP-Adresse"
+        ]
+      },
+      "CONTACT": "Wenn du mir per E-Mail oder Kontaktformular Anfragen zukommen lässt, werden deine Angaben zwecks Bearbeitung gespeichert. Diese Daten gebe ich nicht ohne deine Einwilligung weiter."
+    },
+    "COOKIES": {
+      "TITLE": "Cookies",
+      "TEXT": "Diese Website verwendet keine Cookies oder Tracking-Technologien. Sollten zukünftig Cookies verwendet werden, erfolgt ein entsprechender Hinweis."
+    },
+    "RIGHTS": {
+      "TITLE": "Deine Rechte",
+      "TEXT": "Du hast jederzeit das Recht auf unentgeltliche Auskunft über deine gespeicherten personenbezogenen Daten. Du hast außerdem ein Recht auf:",
+      "LIST": [
+        "Berichtigung",
+        "Löschung",
+        "Einschränkung der Verarbeitung",
+        "Datenübertragbarkeit",
+        "Widerspruch gegen bestimmte Verarbeitungen",
+        "Widerruf deiner Einwilligung"
+      ]
+    },
+    "COMPLAINT": {
+      "TITLE": "Beschwerderecht",
+      "TEXT": "Im Falle datenschutzrechtlicher Verstöße steht dir ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu:",
+      "AUTHORITY": "Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach, www.lda.bayern.de"
+    },
+    "CHANGES": {
+      "TITLE": "Änderungen",
+      "TEXT": "Ich behalte mir vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht."
+    }
   }
 }

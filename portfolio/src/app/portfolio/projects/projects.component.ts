@@ -17,8 +17,8 @@ export class ProjectsComponent {
       description:
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       image: './../../../assets/img/projects/join.png',
-      url: '',
-      github: '',
+      url: 'https://oezguer-taylan.umucu.de/projects/Join/',
+      github: 'https://github.com/Taylan5567/Join',
     },
     {
       title: 'El Pollo Loco',
@@ -26,8 +26,8 @@ export class ProjectsComponent {
       description:
         'A simple Jump-and-Run game based on an object-oriented approach. Help to find coins and poison bottles to fight against the killer Chickens.',
       image: './../../../assets/img/projects/polloloco.png',
-      url: '',
-      github: '',
+      url: 'https://oezguer-taylan.umucu.de/projects/elpolloloco/',
+      github: 'https://github.com/Taylan5567/elpolloloco',
     },
     {
       title: 'Pokédex',
@@ -35,8 +35,8 @@ export class ProjectsComponent {
       description:
         'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
       image: './../../../assets/img/projects/pokedex.png',
-      url: '',
-      github: '',
+      url: 'https://oezguer-taylan.umucu.de/projects/pokedex/',
+      github: 'https://github.com/Taylan5567/Pokedex',
     },
   ];
 }

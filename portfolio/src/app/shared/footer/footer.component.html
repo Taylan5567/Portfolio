@@ -6,9 +6,10 @@
         <img
           class="logo"
           src="./../../../assets/img/logo/logo_taylan_weiss.png"
-          (click)="scrollToSection('header')"
         />
-        <p class="imprint">{{ "FOOTER.IMPRINT" | translate }}</p>
+        <a routerLink="/imprint" (click)="scrollToTop()"
+          ><p class="imprint">{{ "FOOTER.IMPRINT" | translate }}</p></a
+        >
       </div>
       <div class="footercopy">
         <p>© 2025 Özgür Taylan Umucu</p>
@@ -33,7 +34,9 @@
           />
         </a>
       </div>
-      <p class="imprintmobile">{{ "FOOTER.IMPRINT" | translate }}</p>
+      <a class="imprintmobile" routerLink="/imprint" (click)="scrollToTop()"
+        ><p>{{ "FOOTER.IMPRINT" | translate }}</p></a
+      >
     </footer>
   </div>
 </section>

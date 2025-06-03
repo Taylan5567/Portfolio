@@ -1,0 +1,18 @@
+.portfolio {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section {
+  gap: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.page-content {
+  flex: 1;
+}

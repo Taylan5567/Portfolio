@@ -10,6 +10,7 @@ import { HeaderComponent } from '../header.component';
 import { AppComponent } from '../../../app.component';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-header',
@@ -23,6 +24,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatListModule,
     NgIf,
     TranslateModule,
+    RouterModule,
   ],
   templateUrl: './mobile-header.component.html',
   styleUrl: './mobile-header.component.scss',
