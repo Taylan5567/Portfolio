@@ -24,12 +24,24 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   h2 {
-    width: 80% !important;
+    width: 70% !important;
   }
   p {
-    width: 99% !important;
+    width: 70% !important;
+  }
+  .btn {
+    gap: 10px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  h2 {
+    width: 60% !important;
+  }
+  p {
+    width: 60% !important;
   }
   .btn {
     gap: 10px !important;
