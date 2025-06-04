@@ -95,8 +95,11 @@ textarea.ng-valid.ng-touched {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 0;
 
+    cursor: pointer;
+
     &:disabled {
       background-color: rgba(182, 182, 182, 1);
+      cursor: auto;
     }
   }
 }
