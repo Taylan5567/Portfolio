@@ -3,14 +3,17 @@
 
 section {
   position: relative;
-  left: 100px;
   margin: 0;
   display: flex;
   color: white;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 1440px !important;
   width: 100%;
   margin: 0 auto;
+}
+.head {
+  max-width: 1440px;
+  width: 100%;
 }
 
 .slideskill {
