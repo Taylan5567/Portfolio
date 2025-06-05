@@ -19,13 +19,13 @@ section {
   width: 100%;
 }
 
-.slide-trigger {
+.slide-triggering {
   opacity: 0;
   transform: translateX(-100px);
   transition: transform 0.8s ease-out, opacity 0.8s ease-out;
 }
 
-.slide-trigger.in-view {
+.slide-triggering.in-view {
   opacity: 1;
   transform: translateX(0);
 }

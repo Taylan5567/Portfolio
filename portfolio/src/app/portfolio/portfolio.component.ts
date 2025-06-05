@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectsComponent } from './projects/projects.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -9,9 +9,10 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit {
+  ngOnInit(): void {}
   ngAfterViewInit() {
-    const section = document.querySelector('.slide-trigger');
+    const section = document.querySelector('.slide-triggering');
 
     if (section) {
       const observer = new IntersectionObserver(
@@ -19,11 +20,11 @@ export class PortfolioComponent {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add('in-view');
-              observer.unobserve(entry.target); // Nur einmal animieren
+              observer.unobserve(entry.target);
             }
           });
         },
-        { threshold: 0.3 }
+        { threshold: 0.1 }
       );
 
       observer.observe(section);
