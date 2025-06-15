@@ -38,7 +38,11 @@
     "ACCEPT_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
     "READ_PRIVACY_TEXT": "Datenschutzerklärung",
     "SENDING": "Nachricht wird gesendet...",
-    "SENT_SUCCESS": "Deine Nachricht wurde erfolgreich versendet!"
+    "SENT_SUCCESS": "Deine Nachricht wurde erfolgreich versendet!",
+    "EMAIL": "Deine E-Mail Adresse",
+    "PHONE": "Deine Telefonnummer … für einen Rückruf (optional)",
+    "TEXTAREA": "Schreib etwas...",
+    "NAME": "Dein Name"
   },
   "ABOUT": {
     "TITLE": "Über mich",

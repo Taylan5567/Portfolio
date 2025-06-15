@@ -1,21 +1,25 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, NgFor, TranslateModule],
+  imports: [CommonModule, NgFor, TranslateModule, TranslateService],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
 export class ProjectsComponent {
+
+  constructor(private translate: TranslateService) {}
+
+
   projects = [
     {
       title: 'Join',
       language: 'Angular | TypeScript | HTML | CSS | Firebase',
-      description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: this.translate.instant('PROJECTS.JOIN'),
       image: './../../../assets/img/projects/join.png',
       url: 'https://oezguer-taylan.umucu.de/projects/Join/',
       github: 'https://github.com/Taylan5567/Join',
