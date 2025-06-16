@@ -42,7 +42,7 @@ export class HeroComponent implements OnInit {
             }
           });
         },
-        { threshold: 0.3 }
+        { threshold: 0.1 }
       );
 
       observer.observe(section);

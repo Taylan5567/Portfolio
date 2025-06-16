@@ -128,5 +128,10 @@
       "TITLE": "Änderungen",
       "TEXT": "Ich behalte mir vor, diese Datenschutzerklärung gelegentlich anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht."
     }
-  }
+  },
+  "PRO": {
+      "JOIN": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
+      "POCO": "Ein einfaches Jump-and-Run-Spiel auf objektorientierter Basis. Hilf dabei, Münzen und Giftflaschen zu finden, um gegen die Killer-Hühner zu kämpfen.",
+      "POKEDEX": "Eine einfache Bibliothek auf Grundlage der PokéAPI, die Pokémon-Informationen bereitstellt und katalogisiert."
+   }
 }

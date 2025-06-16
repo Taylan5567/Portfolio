@@ -129,9 +129,12 @@
     "CHANGES": {
       "TITLE": "Changes",
       "TEXT": "I reserve the right to update this privacy policy from time to time to comply with legal requirements."
-    },
-    "PROJECTS": {
-      "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
     }
+  },
+    "PRO": {
+      "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "POCO": "A simple Jump-and-Run game based on an object-oriented approach. Help to find coins and poison bottles to fight against the killer Chickens.",
+      "POKEDEX": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+   
   }
 }
